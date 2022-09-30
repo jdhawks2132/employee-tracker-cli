@@ -1,19 +1,27 @@
-## Acceptance Criteria
+![employee tracker](assets/tracker.png)
 
-GIVEN a command-line application that accepts user input
-WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+# Employee Tracker
+
+## Description
+
+This is a command-line application that allows the user to view and manage the departments, roles, and employees in their company so that they can organize and plan their business.
+
+## Installation
+
+To install this application, you will need to clone the repository from GitHub. You will also need to install dependencies by running `npm install` in the command line. You will also need to install MySQL.
+
+## Usage
+
+To use this application, you will need to run `node server.js` in the command line. You will then be prompted with a series of questions. You can view the database by selecting `View All Employees`, `View All Employees By Department`, or `View All Employees By Manager`. You can add to the database by selecting `Add Employee`, `Add Role`, or `Add Department`. You can update the database by selecting `Update Employee Role` or `Update Employee Manager`. You can delete from the database by selecting `Delete Employee`, `Delete Role`, or `Delete Department`. You can also exit the application by selecting `Exit`.
+
+## License
+
+This project is licensed under the MIT license.
+
+## Contributing
+
+If you would like to contribute to this project, please contact me at the email address below.
+
+## Questions
+
+If you have any questions about this project, please contact me [by email](mailto:jdhawks.dev@gmail.com). You can find more of my work on [github](https://github.com/jdhawks2132)
