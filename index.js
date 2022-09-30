@@ -228,7 +228,6 @@ const addEmployee = () => {
 						},
 					])
 					.then((answer) => {
-						console.log(answer);
 						let roleId = answer.id;
 						db.findAllEmployees().then(([rows]) => {
 							let employees = rows;
@@ -257,7 +256,6 @@ const addEmployee = () => {
 										role_id: roleId,
 										manager_id: managerId,
 									};
-									console.log(employee);
 									db.createEmployee(employee)
 										.then(() =>
 											console.log(
