@@ -464,9 +464,11 @@ const viewDepartmentBudget = () => {
 				db.viewDepartmentBudget(departmentId)
 					.then(([rows]) => {
 						let budget = rows;
+						console.log('\n');
 						console.log(
 							`The total utilized budget of the department is ${budget[0].budget}`
 						);
+						console.log('\n');
 					})
 					.then(() => mainMenu());
 			});
